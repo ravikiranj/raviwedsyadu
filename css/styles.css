@@ -1,3 +1,6 @@
+/* Colors */
+/* Mixins */
+/* Rules */
 body.main {
   font-family: Verdana, sans-serif;
   margin: auto;
@@ -5,8 +8,36 @@ body.main {
   width: 90%;
   margin-top: 30px;
 }
-.note {
-  margin-top: 10px;
-  font-size: 24px;
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.title {
+  color: #589442;
+}
+.countdown-container {
+  margin-top: 25px;
+  font-size: 25px;
+  padding: 25px;
   font-style: italic;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.countdown-container .countdown-timer-text {
+  margin-right: 5px;
 }

@@ -1,3 +1,48 @@
+/* Colors */
+@ta-green: #589442;
+
+/* Mixins */
+// Flexbox display
+// flex or inline-flex
+.flex-display(@display: flex) {
+  display: ~"-webkit-@{display}";
+  display: ~"-moz-@{display}";
+  display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+  display: ~"-ms-@{display}"; // IE11
+  display: @display;
+}
+ 
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+.flex-direction(@direction: row) {
+  -webkit-flex-direction: @direction;
+     -moz-flex-direction: @direction;
+      -ms-flex-direction: @direction;
+          flex-direction: @direction;
+}
+ 
+// Flex Line Wrapping
+// - applies to: flex containers
+// nowrap | wrap | wrap-reverse
+.flex-wrap(@wrap: nowrap) {
+  -webkit-flex-wrap: @wrap;
+     -moz-flex-wrap: @wrap;
+      -ms-flex-wrap: @wrap;
+          flex-wrap: @wrap;
+}
+ 
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around 
+.justify-content(@justify: flex-start) {
+  -webkit-justify-content: @justify;
+     -moz-justify-content: @justify;
+      -ms-justify-content: @justify;
+          justify-content: @justify;
+} 
+ 
+/* Rules */
 body.main {
   font-family: Verdana, sans-serif;
   margin: auto;
@@ -6,8 +51,26 @@ body.main {
   margin-top: 30px;
 }
 
-.note  {
-  margin-top: 10px;
-  font-size: 24px;
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.title {
+  color: @ta-green;
+}
+
+.countdown-container {
+  margin-top: 25px; 
+  font-size: 25px;
+  padding: 25px;
   font-style: italic;
+  .flex-display();
+  .flex-wrap(wrap);
+  .flex-direction();
+  .justify-content(center);
+
+  .countdown-timer-text {
+    margin-right: 5px;
+  }
 }
