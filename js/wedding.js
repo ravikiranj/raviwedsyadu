@@ -5,8 +5,7 @@ var wedding = (function (document, window) {
     $("#MAIN .hero-subtitle").arctext({radius: 5000, dir: -1});
   }
   , _initCountdown = function() {
-    var weddingDate = new Date("2016/02/17 00:04:00 GMT+0530")
-    //var weddingDate = new Date("2015/02/17 00:04:00 GMT+0530")
+    var weddingDate = new Date("2016/02/17 04:00:00 GMT+0530")
     , updateCountdownCallback
     , finishedCountdownCallback
     ;
@@ -16,8 +15,12 @@ var wedding = (function (document, window) {
     };
 
     finishedCountdownCallback = function(event) {
+      var istOffset = 330 // +0530
+        , currOffset = new Date().getTimezoneOffset()
+        , istTime = new Date(weddingDate.getTime() + (istOffset + currOffset) * 60 * 1000)
+      ;
       $(".countdown-timer-text").hide();
-      $(this).html("Yadu and Ravi were married on " + weddingDate.toDateString());
+      $(this).html("Yadu and Ravi were married on " + istTime.toDateString());
     };
 
     $(".countdown-timer").countdown(weddingDate)
