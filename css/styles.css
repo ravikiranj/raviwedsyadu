@@ -3,39 +3,38 @@
 /* Rules */
 body.main {
   font-family: Verdana, sans-serif;
-  width: 90%;
-  margin: 30px auto auto;
+  margin: auto;
+}
+body.main .container-fluid {
+  padding: 0;
 }
 h2 {
   font-size: 30px;
   font-weight: bold;
 }
-.tab-content {
-  margin: 20px 0;
-  padding: 20px 0;
+#MAIN {
+  padding: 5px 0;
   background: url("../images/symphony.png") repeat;
 }
-.title {
-  color: #589442;
-}
-#home .ganesha {
+#MAIN .ganesha {
   text-align: center;
 }
-#home .hero {
+#MAIN .hero {
   margin-bottom: 10px;
-  margin-top: -20px;
+  margin-top: -90px;
 }
-#home .hero .hero-title {
+#MAIN .hero .hero-title {
   font-family: 'Dancing Script', cursive;
   text-align: center;
-  font-size: 125px;
+  font-size: 100px;
 }
-#home .hero .hero-subtitle {
+#MAIN .hero .hero-subtitle {
   font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
-  font-size: 75px;
+  font-size: 50px;
+  margin-top: -10px;
 }
-#home .invitation {
+#MAIN .invitation {
   text-align: center;
   display: -webkit-flex;
   display: -moz-flex;
@@ -51,11 +50,11 @@ h2 {
   -ms-justify-content: center;
   justify-content: center;
 }
-#home .invitation .img-container {
+#MAIN .invitation .raviyadu-img-container {
   width: 600px;
   margin-right: 15px;
 }
-#home .invitation .img-container img {
+#MAIN .invitation .raviyadu-img-container img {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -63,7 +62,10 @@ h2 {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-#home .invitation .events-info {
+#MAIN .invitation .title {
+  color: #589442;
+}
+#MAIN .invitation .events-info {
   width: 600px;
   font-size: 20px;
   border: 1px solid #C0C0C0;
@@ -74,7 +76,6 @@ h2 {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   padding: 25px;
-  text-align: justify;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -97,32 +98,33 @@ h2 {
   -ms-justify-content: center;
   justify-content: center;
 }
-#home .invitation .events-info .person {
+#MAIN .invitation .events-info .person {
   font-family: 'Noto Serif', sans-serif;
   font-size: 30px;
 }
-#home .invitation .events-info .separator {
+#MAIN .invitation .events-info .separator {
   margin-bottom: 25px;
 }
-#home .invitation .events-info .parents,
-#home .invitation .events-info .at {
+#MAIN .invitation .events-info .parents,
+#MAIN .invitation .events-info .at {
   font-size: 18px;
 }
-#home .invitation .events-info .event {
-  font-size: 18px;
-}
-#home .invitation .events-info .event .title {
+#MAIN .invitation .events-info .event .title {
   font-size: 20px;
+  font-weight: bold;
 }
-#home .invitation .events-info .venue-address {
+#MAIN .invitation .events-info .event .details {
+  font-size: 18px;
+}
+#MAIN .invitation .events-info .venue-address {
   text-align: center;
   display: block;
 }
-#home .invitation .events-info .events {
+#MAIN .invitation .events-info .events {
   margin-top: 20px;
   width: 550px;
 }
-#home .invitation .events-info .events-row {
+#MAIN .invitation .events-info .events-row {
   margin-bottom: 25px;
   display: -webkit-flex;
   display: -moz-flex;
@@ -134,13 +136,12 @@ h2 {
   -ms-justify-content: space-between;
   justify-content: space-between;
 }
-#home .invitation .events-info .events-row .event {
+#MAIN .invitation .events-info .events-row .event {
   text-align: center;
 }
 .countdown-container {
-  margin-top: 25px;
   font-size: 25px;
-  padding: 25px;
+  padding: 5px;
   font-style: italic;
   display: -webkit-flex;
   display: -moz-flex;
@@ -159,7 +160,93 @@ h2 {
   -moz-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
+  text-align: center;
 }
 .countdown-container .countdown-timer-text {
   margin-right: 5px;
+}
+/* Phones */
+@media only screen and (min-width: 320px) and (max-device-width: 500px) {
+  #MAIN .hero .hero-title {
+    font-size: 60px;
+  }
+  #MAIN .hero .hero-subtitle {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  #MAIN .invitation .raviyadu-img-container {
+    width: 300px;
+    margin-right: 0px;
+  }
+  #MAIN .invitation .raviyadu-img-container img {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  #MAIN .invitation .events-info {
+    font-size: 18px;
+    margin: 10px;
+    width: 300px;
+  }
+  #MAIN .invitation .events-info .person,
+  #MAIN .invitation .events-info .venue-title,
+  #MAIN .invitation .events-info .venue-address {
+    font-size: 20px;
+  }
+  #MAIN .invitation .events-info .events-row {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+  }
+  #MAIN .invitation .events-info .events-row .event {
+    margin-bottom: 2px;
+  }
+}
+/* Small Devices, Tablets, Low Resolutions */
+@media only screen and (min-width: 768px) and (max-device-width: 1279px) {
+  #MAIN .hero .hero-title {
+    font-size: 60px;
+  }
+  #MAIN .hero .hero-subtitle {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  #MAIN .invitation .raviyadu-img-container {
+    width: 500px;
+    margin-right: 0px;
+  }
+  #MAIN .invitation .raviyadu-img-container img {
+    width: 500px;
+    margin-bottom: 10px;
+  }
+  #MAIN .invitation .events-info {
+    font-size: 20px;
+    margin: 10px;
+    width: 500px;
+  }
+  #MAIN .invitation .events-info .events-row {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+  }
+  #MAIN .invitation .events-info .events-row .event {
+    margin-bottom: 2px;
+  }
 }

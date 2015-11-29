@@ -1,3 +1,4 @@
+;
 /**
  * Arctext.js
  * A jQuery plugin for curved text

@@ -1,2 +1,0 @@
-rsync -azvP images index.html css js /usr/share/nginx/html
-lessc css/styles.less > css/styles.css
