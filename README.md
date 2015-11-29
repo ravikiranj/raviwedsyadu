@@ -6,5 +6,5 @@ raviwedsyadu
 * Run `sudo ./deploy.sh` to deploy to your local nginx server
 * To capture html page as PDF, run below commands
   * Install wkhtmltopdf from http://wkhtmltopdf.org/ (make sure you get the binary that's comes with patched Qt)
-  * `wkhtmltopdf -O landscape -s tabloid -n --enable-javascript --enable-external-links http://localhost raviwedsyadu.pdf`
-  * Disable countdown and modify CSS if necessary
+  * Run `./genpdf.sh`
+  * Disable countdown and modify CSS if necessary to suit your needs
