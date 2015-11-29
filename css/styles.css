@@ -3,9 +3,8 @@
 /* Rules */
 body.main {
   font-family: Verdana, sans-serif;
-  margin: auto;
   width: 90%;
-  margin-top: 30px;
+  margin: 30px auto auto;
 }
 h2 {
   font-size: 30px;
@@ -13,12 +12,130 @@ h2 {
 }
 .tab-content {
   margin: 20px 0;
-  border: 1px solid #C0C0C0;
-  padding: 20px;
-  border-radius: 6px;
+  padding: 20px 0;
+  background: url("../images/symphony.png") repeat;
 }
 .title {
   color: #589442;
+}
+#home .ganesha {
+  text-align: center;
+}
+#home .hero {
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+#home .hero .hero-title {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 125px;
+}
+#home .hero .hero-subtitle {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  font-size: 75px;
+}
+#home .invitation {
+  text-align: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+#home .invitation .img-container {
+  width: 600px;
+  margin-right: 15px;
+}
+#home .invitation .img-container img {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#home .invitation .events-info {
+  width: 600px;
+  font-size: 20px;
+  border: 1px solid #C0C0C0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 25px;
+  text-align: justify;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-content: stretch;
+  -moz-align-content: stretch;
+  -ms-align-content: stretch;
+  align-content: stretch;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+#home .invitation .events-info .person {
+  font-family: 'Noto Serif', sans-serif;
+  font-size: 30px;
+}
+#home .invitation .events-info .separator {
+  margin-bottom: 25px;
+}
+#home .invitation .events-info .parents,
+#home .invitation .events-info .at {
+  font-size: 18px;
+}
+#home .invitation .events-info .event {
+  font-size: 18px;
+}
+#home .invitation .events-info .event .title {
+  font-size: 20px;
+}
+#home .invitation .events-info .venue-address {
+  text-align: center;
+  display: block;
+}
+#home .invitation .events-info .events {
+  margin-top: 20px;
+  width: 550px;
+}
+#home .invitation .events-info .events-row {
+  margin-bottom: 25px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+#home .invitation .events-info .events-row .event {
+  text-align: center;
 }
 .countdown-container {
   margin-top: 25px;

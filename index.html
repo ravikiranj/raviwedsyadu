@@ -9,12 +9,15 @@
     <meta name="description" content="Ravi and Yadu's wedding website">
     <meta name="author" content="ravikiranj">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- Optional theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans+Condensed:300|Noto+Serif' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,7 +30,6 @@
             <ul class="nav nav-pills" id="MAIN_NAV">
                 <li role="presentation" class="home active"><a href="#home">Home</a></li>
                 <li role="presentation" class="events"><a href="#events">Events</a></li>
-                <li role="presentation" class="photos"><a href="#photos">Photos</a></li>
                 <li role="presentation" class="countdown"><a href="#countdown">Countdown</a></li>
                 <li role="presentation" class="getintouch"><a href="#getintouch">Get In Touch</a></li>
             </ul>
@@ -35,9 +37,80 @@
             <!-- Tab Contents -->
             <!-- Tab panes -->
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home">Home</div>
-                <div role="tabpanel" class="tab-pane" id="events">Events</div>
-                <div role="tabpanel" class="tab-pane" id="photos">Photos</div>
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="ganesha">
+                        <img height="100" src="images/ganesha.png"/>
+                    </div>
+                    <div class="hero">
+                        <div class="hero-title">Yadu & Ravi</div>
+                        <div class="hero-subtitle">17 FEBRUARY 2016</div>
+                    </div>
+                    <div class="invitation">
+                        <div class="img-container"><img width="600" src="images/ravi-yadu.jpg"/></div>
+                        <div class="events-info">
+                            <div class="person">Yadukumari. S. R.</div>
+                            <div class="parents">(D/o. Smt. S.N. Latha & Sri S.T. Ramesha)</div>
+
+                            <div class="separator"></div>
+
+                            <div class="person">Ravikiran Janardhana</div>
+                            <div class="parents">(S/o. Smt. V.K. Chudamani & Sri Janardhana. R)</div>
+
+                            <div class="separator"></div>
+
+                            <div class="date-info med">on Wednesday, 17th February 2016</div>
+                            <div class="separator"></div>
+
+                            <div class="at">at</div>
+                            <div class="venue-title"><a href="http://gurunarasimhakalyanamandira.com/">Sri Guru Narashimha Kalyana Mantapa</a></div>
+
+                            <div class="separator"></div>
+                            <a href="https://goo.gl/ScwXgI" class="venue-address">
+                                <div class="venue-address-1">#12, Basavanagudi Road, Near Ramkrishna Ashrama</div>
+                                <div class="venue-address-2">Bangalore - 560004.</div>
+                            </a>
+
+                            <div class="events">
+                                <div class="events-row">
+                                    <div class="varapooja event">
+                                        <div class="title">Varapooja</div>
+                                        <div class="details">Tue, Feb 16 2016</div>
+                                        <div class="details">12:30 pm</div>
+                                    </div>
+                                    <div class="reception event">
+                                        <div class="title">Reception</div>
+                                        <div class="details">Tue, Feb 16 2016</div>
+                                        <div class="details">7 pm</div>
+                                    </div>
+                                </div>
+
+                                <div class="events-row">
+                                    <div class="muhurtham event">
+                                        <div class="title">Muhurtham</div>
+                                        <div class="details">Lagnam: Dhanur</div>
+                                        <div class="details">Wed, Feb 17 2016</div>
+                                        <div class="details">4 am to 4:30 am</div>
+                                    </div>
+                                    <div class="reception-continued event">
+                                        <div class="title">Reception</div>
+                                        <div class="details">Wed, Feb 17 2016</div>
+                                        <div class="details">11:30 am onwards</div>
+                                    </div>
+                                    <div class="lunch event">
+                                        <div class="title">Lunch</div>
+                                        <div class="details">Wed, Feb 17 2016</div>
+                                        <div class="details">12:30 pm</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="events">
+                    <div class="left-nav">
+                        <img width="800" src="images/events-info.jpg"/>
+                    </div>
+                </div>
                 <div role="tabpanel" class="tab-pane" id="countdown">Countdown</div>
                 <div role="tabpanel" class="tab-pane" id="getintouch">Get In Touch</div>
             </div>
@@ -55,6 +128,7 @@
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.arctext.js"></script>
     <script src="js/countdown.js"></script>
     <script src="js/wedding.js"></script>
 </body>
