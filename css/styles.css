@@ -191,6 +191,8 @@ h2 {
   #MAIN .invitation .events-info {
     font-size: 18px;
     margin: 10px;
+  }
+  #MAIN .invitation .events-info .events {
     width: 300px;
   }
   #MAIN .invitation .events-info .person,
@@ -242,6 +244,8 @@ h2 {
   #MAIN .invitation .events-info {
     font-size: 20px;
     margin: 10px;
+  }
+  #MAIN .invitation .events-info .events {
     width: 500px;
   }
   #MAIN .invitation .events-info .events-row {
